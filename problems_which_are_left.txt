@@ -1,0 +1,21 @@
+Arrays:
+Maximum product subarray:
+https://www.geeksforgeeks.org/maximum-product-subarray/
+
+String:
+Interleaving problem having common characters between two strings(using dp):
+https://www.geeksforgeeks.org/find-if-a-string-is-interleaved-of-two-other-strings-dp-33/
+
+Word wrap problem(to understand more later on):
+https://www.geeksforgeeks.org/word-wrap-problem-dp-19/
+
+Count all palindromic strings in a given string:
+https://www.geeksforgeeks.org/count-palindromic-subsequence-given-string/
+
+Pattern searching KMP and Boyer's Moore's algorithm
+
+Linked List:
+Quicksort and MergeSort using LinkedList
+
+Trees:
+Iterative inorder, preorder and postorder traversals
