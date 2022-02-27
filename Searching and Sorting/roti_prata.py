@@ -43,7 +43,7 @@ def isFeasible(arr, n, p, cur_time):
     cnt = 0
     for i in range(n):
         if arr[i]!=0:
-            cnt = cnt+math.floor(-1+(1+(8*cur_time)//arr[i])**0.5)/2
+            cnt = cnt+math.floor(-1+(1+(8*cur_time)//arr[i])**0.5)//2
         if cnt >= p:
             return True
     return False

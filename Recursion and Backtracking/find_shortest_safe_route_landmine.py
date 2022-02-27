@@ -1,3 +1,4 @@
+# Done by Faizan Mombasawala
 import sys
 
 
@@ -7,10 +8,11 @@ def isSafe(i, j, r, c, m):
 
 def SSRHelper(i, j, m, cur_dist, cur_min):
     r, c = len(m), len(m[0])
+
     # This array is defined such that first go left, then up down and lastly go right
     pos = [[0, 1], [1, 0], [-1, 0], [0, -1]]
 
-    # We reached the end, and this surely is the current smallest distance
+    # We reached the end, and this surely is the shortest distance so far
     if j == c - 1:
         return cur_dist
 
@@ -21,12 +23,12 @@ def SSRHelper(i, j, m, cur_dist, cur_min):
         return sys.maxsize
 
     prev_min = cur_min
+    m[i][j] = 0
     for x, y in pos:
-        m[i][j] = 0
         if isSafe(i + x, j + y, r, c, m):
             res = SSRHelper(i + x, j + y, m, cur_dist + 1, prev_min)
             prev_min = min(prev_min, res)
-        m[i][j] = 1  # Backtrack
+    m[i][j] = 1  # Backtrack
     return prev_min
 
 
